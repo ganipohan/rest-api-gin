@@ -1,15 +1,16 @@
 package main
 
 import (
-    "gin-rest-api/handlers"
-    "gin-rest-api/middleware"
-    "gin-rest-api/models"
-    "github.com/gin-gonic/gin"
+	"gin-rest-api/handlers"
+	"gin-rest-api/middleware"
+	"gin-rest-api/models"
+
+	"github.com/gin-gonic/gin"
 )
 
 func main() {
     // Inisialisasi koneksi database
-    models.InitDB("root:@tcp(localhost:3306)/ginapi")
+    models.InitDB("system@JWI88:system@JWI88@tcp(localhost:3306)/ginapi")
 
     r := gin.Default()
 

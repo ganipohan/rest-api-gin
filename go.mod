@@ -1,4 +1,4 @@
-module gin-rest-api
+module gin-rest-api 
 
 go 1.23.0
 
